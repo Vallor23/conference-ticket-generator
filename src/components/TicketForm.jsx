@@ -70,8 +70,8 @@ const TicketForm = ({onTicketSubmit}) => {
         // Form to submit a ticket
         <form onSubmit={handleSubmit}>
             <h2>Submit a Ticket</h2>
-            <div>
-                <label htmlFor="fullname"></label>
+            <div className="form-group">
+                <label htmlFor="fullname">Full Name</label>
                 <input 
                     type="text"
                     value={fullname}
@@ -80,8 +80,8 @@ const TicketForm = ({onTicketSubmit}) => {
                 />
                 {errors.fullname && <span id="fullnameError" role="alert" className="error">{errors.fullname}</span>}
             </div>
-            <div>
-                <label htmlFor="email"></label>
+            <div className="form-group">
+                <label htmlFor="email">Enter Email Adress*</label>
                 <input 
                     type="email"
                     value={email}
@@ -90,8 +90,8 @@ const TicketForm = ({onTicketSubmit}) => {
                 />
                 {errors.email && <span id="emailError" role="alert" className="error">{errors.email}</span>}
             </div>
-            <div>
-                <label htmlFor="avatarURL"></label>
+            <div className="form-group">
+                <label htmlFor="avatarURL">Avatar URL</label>
                 <input 
                     type="text"
                     value={avatarURL}
