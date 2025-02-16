@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
 
-import './App.css'
+// import './App.css'
 //components
 import TicketForm from './components/TicketForm'
 import Ticket from './components/Ticket'
@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-        <div className="container">
+        <div className=' '>
             <Header/>
             <Routes>
               <Route path="/" element={<TicketSelection quantity={quantity} setQuantity={setQuantity}  setTicketType={setTicketType}/>} />
